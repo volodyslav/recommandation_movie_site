@@ -17,13 +17,14 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # Your React app URL
+    "http://localhost:5173",  # Your React app URL
 ]
 
+CORS_ALLOW_CREDENTIALS = True
 # Application definition
 
 INSTALLED_APPS = [
-    'corsheaders',
+    
     'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -32,7 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "main",
-    
+    'corsheaders',
 ]
 
 MIDDLEWARE = [

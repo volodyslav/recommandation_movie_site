@@ -4,6 +4,5 @@ from . import views
 url_name ="main"
 
 urlpatterns = [
-    path("", views.hello, name="hello"),
-    path("predict", views.predict, name="predict")
+    path("predict", views.PredictAPIView.as_view(), name="predict-api")
 ]
